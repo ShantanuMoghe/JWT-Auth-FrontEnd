@@ -1,0 +1,15 @@
+.mat-card {
+    background: rgb(138, 219, 252);
+}
+
+.mat-card-header{
+    background-color:rgba(75, 245, 83, 0.822) !important;
+}
+
+::ng-deep .mat-form-field-label {
+    color:#7b1fa2 !important;
+}
+
+.mat-input-element{
+    color:black !important
+}
