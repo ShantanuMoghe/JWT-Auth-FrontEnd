@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
+import { Router } from '@angular/router';
+import {User} from '../user';
 
 @Component({
   selector: 'app-login',
@@ -10,9 +10,16 @@ import {MatCardModule} from '@angular/material/card';
 export class LoginComponent implements OnInit {
 
   hide:boolean=true;
-  constructor() { }
+  constructor(private router:Router) { }
+  user = new User();
 
   ngOnInit(): void {
+    
+  }
+
+  onLoginClick(){
+    console.log(this.user.username,this.user.password);
+    this.router.navigateByUrl('/home')
   }
 
 }
